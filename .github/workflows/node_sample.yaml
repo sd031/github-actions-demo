@@ -24,14 +24,14 @@ jobs:
       - name: Create zip bundle
         run: |
             echo 'zippig artifact'
-            zip -r ../${{ github.sha }}.zip .
+            zip -r ./${{ github.sha }}.zip .
             pwd
             ls -la
       - name: Archive artifact
         uses: actions/upload-artifact@v2
         with:
           name: zipped-bundle
-          path: ./${{ github.sha }}.zip
+          path: ${{ github.sha }}.zip
 
   publish:
     runs-on: ubuntu-latest
