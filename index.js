@@ -9,6 +9,9 @@ app.get('/', (req, res) => {
 app.get('/services/service-1', (req, res) => {
   res.send('This is a sample response from service 1 (Nodejs App Service) v2')
 })
+app.get('/services/service-2', (req, res) => {
+  res.send('This is a sample response from service 2 (Nodejs App Service) ')
+})
 app.get('/services/service-1/status', (req, res) => {
     res.send('ok')
   })
