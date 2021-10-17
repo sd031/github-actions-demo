@@ -23,7 +23,7 @@ jobs:
       # - run: npm test
       - name: Create zip bundle
         run: |
-            cd function
+            echo 'zippig artifact'
             zip -r ../${{ github.sha }}.zip .
       - name: Archive artifact
         uses: actions/upload-artifact@v2
