@@ -12,7 +12,7 @@
   "keywords": [
     "node"
   ],
-  "author": "Sandip Das",
+  "author": "Srinivas",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
